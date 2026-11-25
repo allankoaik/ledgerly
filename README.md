@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ledgerly — AI accounting firm landing page
 
-## Getting Started
+A one-page marketing site for **Ledgerly**, a fictional AI-powered accounting firm, built as a portfolio project.
 
-First, run the development server:
+The hero started from a 21st.dev component and was rebuilt around the brand: an isometric stack of five accounting documents (bank statement, ledger, AI bookkeeper, invoice, report) that opens into a five-stage workflow when you hover it.
+
+## Highlights
+
+- **Interactive document stack:** hover the core and the pages lift apart, each linked to a stage card. The page under your pointer takes the green glow, scan rings and lift, and its card grows to match. Everything runs on springs, so it eases instead of snapping.
+- **Full landing page:** Product, How it works, Solutions, Pricing, an FAQ and a "Book a free call" form, with sections that fade up as you scroll.
+- **Accessible by default:** native `details`/`summary` for the FAQ, form errors shown only after you interact (`:user-invalid`) and mirrored to `aria-invalid`, WCAG AA contrast on buttons, and reduced-motion support throughout.
+- **Responsive:** checked from 375px phones to wide desktops.
+
+## Built with
+
+- [Next.js 16](https://nextjs.org) (App Router) and React 19
+- TypeScript
+- Tailwind CSS v4
+- [Motion](https://motion.dev) for the springs and scroll reveals
+- [Lucide](https://lucide.dev) icons and the Onest font
+
+## Run it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/components/ui/ledgerly-hero.tsx`: nav, hero copy and the animated document stack
+- `src/components/ui/ledgerly-sections.tsx`: every section below the hero, plus the footer
+- `src/app/`: page, layout, global styles and the favicon
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ledgerly is a fictional company. The pricing, features and copy are for demonstration only, and the contact form is not connected to a server.

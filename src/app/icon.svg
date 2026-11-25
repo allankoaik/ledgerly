@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-27 -27 54 54">
+  <!-- The Ledgerly mark (LedgerPages in ledgerly-hero.tsx): three stacked ledger pages. -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A3DA7E" />
+      <stop offset="1" stop-color="#62BD34" />
+    </linearGradient>
+  </defs>
+  <rect x="-10" y="-25" width="32" height="38" rx="6" fill="url(#g)" opacity="0.4" />
+  <rect x="-16" y="-19" width="32" height="38" rx="6" fill="url(#g)" opacity="0.68" />
+  <rect x="-22" y="-13" width="32" height="38" rx="6" fill="url(#g)" />
+  <rect x="-15" y="-2" width="18" height="4" rx="2" fill="#fff" />
+  <rect x="-15" y="7" width="12" height="4" rx="2" fill="#fff" opacity="0.85" />
+</svg>
